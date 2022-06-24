@@ -1,0 +1,10 @@
+# Rust
+/target/
+
+# Svelte
+/node_modules/
+/www/public/build/
+
+# Developement
+/dev-config.json
+/dev.htpasswd
