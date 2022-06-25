@@ -1,5 +1,5 @@
 # RaspberryPi
-Source Code for my Raspberry Pi 4's LAN Web Server
+Source Code for my Raspberry Pi 4's LAN Web Server. It also includes hosting an instance of [Shigure](https://github.com/Stridsvagn69420/Shigure) and [Cyrkensia](https://github.com/Stridsvagn69420/Cyrkensia).
 
 # Developing
 ## Commands
@@ -14,14 +14,20 @@ If you don't use Linux (how dare you?!) or don't want to create a folder, that y
 ```json
 {
     "server": {
+        "path": "/home/joe/Code/RaspberryPi/www/public",
         "bindaddr": "127.0.0.1:9000",
         "socket": false
     },
     "cyrkensia": {
+        "path": "/home/joe/Music",
         "uuid": "ba046cd1-2c09-480d-ac67-bc422ad540d7",
         "name": "Raspberry Pi",
         "hosticon": "raspberrypi",
         "htpasswd": "dev.htpasswd"
+    },
+    "shigure": {
+        "path": "/home/joe/Code/Shigure/build/web"
     }
 }
 ```
+You can find an explaination for every field in the docs generated from the Rust code.
